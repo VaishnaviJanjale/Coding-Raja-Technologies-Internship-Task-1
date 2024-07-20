@@ -1,0 +1,22 @@
+function generateResume() {
+    const name = document.getElementById('name').value;
+    const address = document.getElementById('address').value;
+    const phone = document.getElementById('phone').value;
+    const email = document.getElementById('email').value;
+    const education = document.getElementById('education').value;
+    const experience = document.getElementById('experience').value;
+    const skills = document.getElementById('skills').value;
+
+    const resumeOutput = document.getElementById('resume-output');
+    resumeOutput.innerHTML = `
+        <h2>${name}</h2>
+        <p><strong>Address:</strong> ${address}</p>
+        <p><strong>Phone:</strong> ${phone}</p>
+        <p><strong>Email:</strong> ${email}</p>
+        <h3>Education</h3>
+        <p>${education.replace(/\n/g, '<br>')}</p>
+        <h3>Work Experience</h3>
+        <p>${experience.replace(/\n/g, '<br>')}</p>
+        <h3>Skills</h3>
+        <p>${skills<|vq_8094|>    resumeOutput.style.display = 'block';
+}
